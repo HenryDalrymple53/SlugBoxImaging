@@ -1,0 +1,16 @@
+[Unit]
+Description=Start Image capture
+After=multi-user.target
+
+[Service]
+Type=oneshot
+User=node54
+Group=node54
+WorkingDirectory=/home/node54/SlugBoxImaging
+ExecStart=/home/node54/SlugBoxImaging/start_stream.sh
+RemainAfterExit=yes
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
