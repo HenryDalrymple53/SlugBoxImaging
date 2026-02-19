@@ -1,6 +1,6 @@
 #!/bin/bash
 # filepath: /Users/ameyassh/Documents/PhD/Research/Slug ID/SlugID/setup_service.sh
-echo "echo -e "\e[1;31mbox_imaging service runs on startup. This takes the camera and records video indefinitely.\e[0m"" >> ~/.bashrc
+echo 'echo -e "\e[1;31mbox_imaging service runs on startup. This takes the camera and records video indefinitely.\e[0m"' >> ~/.bashrc
 CURRENT_USER=$(whoami)
 
 # Generate service file with current user
